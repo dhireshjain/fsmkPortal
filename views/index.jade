@@ -1,0 +1,61 @@
+extend layout
+block content
+  div(class=['container','col-md-8'])
+    marquee
+     h1 Free As In Freedom
+  div(class=['container','col-md-4'])
+    img(class='pull-right' src='a.jpg')
+  div(class=['container','col-md-12'])
+   br
+   br
+   br
+
+  div(class=['container','col-md-8'] style='border:2px; padding:0px;')
+   div(class=['panel', 'panel-default'] style="background-color:#E2DCDC;")
+    div(class="panel-heading" style="text-align:center; background-color:#5d5d5d; color:white") 
+     h3 Latest News
+    div(class="jumbotron" style="margin-top:5px;")
+     h4(style="text-align:center; color:black;") GNU Parallel 20140722 ('MH17') released
+     p(style="color:black;")
+      GNU Parallel is a shell tool for executing jobs in parallel using one or more computers. A job is can be a single command or a small 	 script that has to be run for each of the lines in the input. The typical input is a list of files, a list of hosts, a list of users, a 	    list of URLs, or a list of tables. A job can also be a command that reads from a pipe. GNU Parallel can then split the input and pipe it 	     into commands in parallel. <br> GNU Parallel 20140722 ('MH17') has been released. It is available for download at: <a href="http://	ftp.gnu.org/gnu/parallel"> here</a>
+     p(style="color:black;") This release contains a major change in central parts of the code and should be considered beta quality. As   always it passes the testsuite, so most functionality clearly works. 
+  
+    div(class='jumbotron')
+     h4(style="text-align:center; color:black;") Cloud computing is a trap, warns GNU founder Richard Stallman
+     p(style='color:black;') The concept of using web-based programs like Google's Gmail is "worse than stupidity", according to a leading advocate of free software.<br>Richard Stallman, founder of the Free Software Foundation and creator of the computer operating system GNU, said that cloud computing was simply a trap aimed at forcing more people to buy into locked, proprietary systems that would cost them more and more over time.<br>"It's stupidity. It's worse than stupidity: it's a marketing hype campaign," he told The Guardian.<br>The 55-year-old New Yorker said that computer users should be keen to keep their information in their own hands, rather than hand it over to a third party.<br>"The interesting thing about cloud computing is that we've redefined cloud computing to include everything that we already do," he said. "The computer industry is the only industry that is more fashion-driven than women's fashion. Maybe I'm an idiot, but I have no idea what anyone is talking about. What is it? It's complete gibberish. It's insane. When is this idiocy going to stop?"<br>Stallman, who is a staunch privacy advocate, advised users to stay local and stick with their own computers.<br>"One reason you should not use web applications to do your computing is that you lose control," he said. "It's just as bad as using a proprietary program. Do your own computing on your own computer with your copy of a freedom-respecting program. If you use a proprietary program or somebody else's web server, you're defenceless. You're putty in the hands of whoever developed that software."
+     
+    div.jumbotron
+     a(href='#')
+      p(style='text-align:center;') More...
+  
+  div.col-md-4(style="border:2px")
+   div(class="panel panel-default" style="padding:1em background-color:black;")
+    div(class="panel-heading" style="text-align:center; background-color:rgb(200,50,50); color:white;")
+     h3 Events
+    div.panel-body(style="background-color:#d5d5d5;")
+     table.tab
+      tbody(id='tabl' style="text-align:center width:100%")
+       tr
+        th Date
+        th Event
+        th Location
+        th Description
+       hr
+       tr
+        th
+         hr
+        th 
+         hr
+        th 
+         hr
+        th 
+         hr
+       tr
+        td 4 July 2014
+        td Free Software
+        td MSRIT
+        td
+         a(href="#") More
+     
+    
+

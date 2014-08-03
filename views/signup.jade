@@ -1,0 +1,24 @@
+extend layout
+block content
+  div.container(style="text-align:center")
+    form(method="POST", action="/registration")
+      h3 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Sign Up
+      p &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Name 
+       input(type="text", name="name")
+      p &nbsp&nbsp Username 
+       input(type="text", name="username")
+      p &nbsp&nbsp&nbsp Password 
+       input(type="password", name="password")
+      p &nbsp&nbsp&nbsp&nbsp&nbsp&nbspEmail Id 
+       input(type="email", name="email")
+      p Contact Info 
+       input(type="tel", name="number") 
+      p
+       br
+       button.btn.btn-primary(type='submit')
+         Sign Sign Up
+      p
+       br
+       if(messages)
+        p #{messages.info}
+      p=ok

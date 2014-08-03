@@ -1,0 +1,41 @@
+doctype
+html
+  head
+    title #{title} - My Site
+    link(rel='stylesheet', href='assets/bootstrap.css')
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js")
+    script(type='text/javascript' src='assets/bootstrap.min.js')
+  body(style="background-color:#E2DCDC")
+    div(class=['navbar', 'navbar-default'] role='navigation' style="background-color:#E2DCDC")
+      .navbar-brand
+        p(style="font-size:40px; color:black; font-family: century gothic;") FSMK
+      div(class='navbar-header')
+        button(type='button' class='navbar-toggle' data-toggle='collapse' data-target='#drop')
+         span(class='icon-bar')
+         span(class='icon-bar')
+         span(class='icon-bar')
+      div(class=['collapse', 'navbar-collapse'] id='drop')
+        ul(class=['nav','navbar-nav'])
+          li  
+           a(href='#') Home
+          li(class='dropdown')
+            a(data-toggle='dropdown', href='#').dropdown-toggle About 
+             span(class='caret')
+            ul(role='menu').dropdown-menu
+             li
+               a(href='#') Free Software
+             li
+               a(href='#') Open Software
+             li
+              a(href='#') Propietary Software
+        ul(class=['nav','navbar-nav','navbar-center'])
+         li
+          a(href='/sign') Sign Up 
+         li
+          a(href='/loggingin') Log In 
+    
+      block content
+      
+     .panel-footer(style='background-color: grey; text-align:center')
+       p FSMK
+
